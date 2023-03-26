@@ -24,15 +24,18 @@ body {
 .search-box {
   font: inherit;
   padding: 5px;
-  /* max-width: 320px; */
-  margin: auto;
-  display: flex;
+  max-width: 320px;
+  position: absolute;
+  height: 40px;
 
-  margin-block: auto;
-
+  top: 15px;
+  left: 40vw;
+  /* margin: auto;
+  display: flex; */
   transition: all 1s ease-out;
   border: 1px white;
-  background-color: lightsteelblue;
+  /* background-color: lightsteelblue; */
+  background-color: white;
   border-radius: 5px;
 }
 
@@ -44,4 +47,12 @@ body {
 .search-box:focus {
   background-color: lavender;
   outline: none;
+}
+
+.search-image {
+  border-radius: 50%;
+  background-color: #948bc1;
+  position: absolute;
+  top: 20px;
+  left: 50vw;
 }
