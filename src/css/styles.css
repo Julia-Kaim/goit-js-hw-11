@@ -55,4 +55,8 @@ body {
   position: absolute;
   top: 20px;
   left: 50vw;
+  transition: all 1s ease-out;
+}
+.search-image:hover {
+  box-shadow: -11px 7px 24px 0px rgba(148, 139, 193, 1);
 }
