@@ -9,15 +9,35 @@
   </head>
   <body>
     <div class="box">
-      <input
-        type="text"
-        id="search-box"
-        class="search-box"
-        placeholder="Search images... "
-      />
-      <img src="./search.svg" alt="Search image" width="30" height="30" class="search-image"/>
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          id="search-box"
+          class="search-box"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="button">
+          <img
+            src="./search.svg"
+            alt="Search image"
+            width="30"
+            height="30"
+            class="search-image"
+          />
+        </button>
+      </form>
     </div>
 
+    <div class="gallery-container">
+      <div class="gallery"></div>
+
+      <a class="btn-to-top" title="Return to top"> </a>
+    </div>
+    <button type="button" class="btn-load-more is-hidden">Load more</button>
+    <a class="btn-to-top" title="Return to top"> </a>
+    <img src="./up-arrow.svg" alt="Up arrow" width="30" height="30" />
     <script type="module" src="./index.js"></script>
   </body>
 </html>
